@@ -1,15 +1,24 @@
-// Import your assets at the top of the file
-// import sun_icon from '../assets/sun_icon.png';
-// import moon_icon from '../assets/moon_icon.png';
 
+
+import { useEffect } from "react";
 import assets from "../assets/assets";
 
-// const assets = {
-//     sun_icon,
-//     moon_icon
-// };
 
 const ThemeToggleBtn = ({theme, setTheme}) => {
+    useEffect(() => {
+        const prefersDarkMode = window.matchMedia('prefers-color-scheme:dark').matches;
+        setTheme(theme || (prefersDarkMode ? 'dark' : 'light'))
+    })
+
+    useEffect(() => {
+        if (theme === "dark") {
+            document.body.classList.add("dark");
+        } else {
+            document.body.classList.remove("dark");
+        }
+        localStorage.setItem("theme", theme);
+    }, [theme]);
+
     return (
     <>
     <button>

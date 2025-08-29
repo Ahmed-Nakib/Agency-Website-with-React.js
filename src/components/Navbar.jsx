@@ -18,7 +18,7 @@ const Navbar = ({ theme, setTheme }) => {
       <ul
         className={`text-gray-700 sm:text-sm flex sm:items-center gap-5 transition-all duration-300 
         max-sm:fixed top-0 bottom-0 right-0 max-sm:min-h-screen max-sm:h-full max-sm:flex-col max-sm:bg-primary max-sm:text-white max-sm:pt-20
-        ${sidebarOpen ? "max-sm:w-60 max-sm:pl-10" : "max-sm:w-0 overflow-hidden"}`}
+        ${sidebarOpen ? "max-sm:w-60 max-sm:pl-10" : "max-sm:w-0 overflow-hidden dark:text-white"}`}
       >
         {/* -----------------  Close Icon --------------------- */}
         <img

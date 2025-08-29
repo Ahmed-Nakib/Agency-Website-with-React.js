@@ -3,7 +3,7 @@
 
 @import "tailwindcss";
 
-/* Removed unsupported @custom-variant rule */
+@custom-variant dark (&:where(.dark, .dark *));
 
 *{
     font-family: "Manrope", sans-serif;

@@ -28,7 +28,7 @@ const Navbar = ({ theme, setTheme }) => {
           onClick={() => setSidebarOpen(false)}
         />
 
-        <li onClick={() => setSidebarOpen(false)}><a className="sm:hover:border-b" href="#about">About</a></li>
+        <li onClick={() => setSidebarOpen(false)}><a className="sm:hover:border-b" href="#hero">Home</a></li>
         <li onClick={() => setSidebarOpen(false)}><a className="sm:hover:border-b" href="#services">Services</a></li>
         <li onClick={() => setSidebarOpen(false)}><a className="sm:hover:border-b" href="#our-work">Our Work</a></li>
         <li onClick={() => setSidebarOpen(false)}><a className="sm:hover:border-b" href="#contact-us">Contact</a></li>
